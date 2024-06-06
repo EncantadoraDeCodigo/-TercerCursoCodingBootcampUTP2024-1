@@ -1,0 +1,108 @@
+*{
+    marging= 0;
+    font-family: "Poppins";
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(98, 96, 98);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/*section{
+    min-width: 100px;
+    flex-wrap: wrap;
+}*/
+
+
+.login {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+.carrito {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -75px;
+}
+
+header{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   margin-top: -46rem;
+    width: 680rem;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+.header .logo img:hover{
+    transform:  scale(1.2);
+    color: aqua;
+}
+
+/**/
+.producto{
+    position: absolute;
+    
+    margin-left: -13rem;
+}
+
+.producto img{
+    border-radius: 5rem;
+    margin-left: 10rem;
+    margin-top: -12rem;
+}
+
+.producto img:hover{
+    color: rgb(160, 52, 190);
+}
+
+.producto h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-left: 50rem;
+    margin-top: 16rem;
+}
+
+.producto h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d20000;
+    margin-left: 50rem;
+    font-size: 16px;
+}
+
+.boton .btn{
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+    margin-left: -21rem;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    transform:  scale(1.2);
+    color: #fff;
+}
+
+.descrip p{
+    margin-top: 35rem;
+    margin-left: -45rem;
+    width: 40rem;
+    color: #3f3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+}

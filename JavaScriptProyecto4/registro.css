@@ -1,0 +1,180 @@
+*{
+    marging= 0;
+    font-family: "Poppins";
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("media/logearse.avif");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/*section{
+    min-width: 100px;
+    flex-wrap: wrap;
+}*/
+
+
+.login {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+.carrito {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -75px;
+}
+
+header{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    */border: 2px solid #fafafa;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -42rem;
+    width: 680rem;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+.header .logo img:hover{
+    transform:  scale(1.2);
+    color: aqua;
+}
+
+
+/**/
+.boton .btn:hover{
+    color: rgb(216, 232, 226);
+    background-color: cadetblue;
+}
+
+
+
+.logea{
+    margin-top: 60px;
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgb(225, 225, 225, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: absolute;
+    
+}
+
+.logea h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.logea .input-box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 92%;
+    height: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255 ,255 , 0.2 );
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    margin-left: -16px;
+    margin-top: -6px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+
+.input-box h2 {
+    position: absolute;
+    right: -20px;
+    top: 3%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.input-box h3 {
+    position: absolute;
+    right: -20px;
+    top: 3%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.logea .forgotcontra{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.forgotcontra label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.forgotcontra a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.forgotcontra a:hover {
+    text-decoration: underline;
+}
+
+.logea .btn{
+
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.1 );
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.logea .registrarme{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 15px;
+}
+
+.registrarme p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrarme p a:hover{
+    text-decoration: underline;
+}

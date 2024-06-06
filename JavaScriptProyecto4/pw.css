@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    /*min-width: 10px;
+    flex-wrap: wrap;*/
+}
+
+body{
+    background-image: url("media/opcion6.jpg");*/
+    /*background-color: rgb(40, 40, 40);*/
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-attachment: fixed;
+    /*min-width: 300px;
+    flex-wrap: wrap;*/
+}
+
+/*section{
+    min-width: 100px;
+    flex-wrap: wrap;
+}*/
+
+
+.login {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+.carrito {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -75px;
+}
+
+header{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    */border: 2px solid #fafafa;
+    display: flex;
+    justify-content: space-between;
+    position: ;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+.header .logo img:hover{
+    transform:  scale(1.2);
+    color: aqua;
+}
+
+.banner{
+    background-image: url("media/selection.png");
+    height: 18rem;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*products*/
+
+h2{
+    font-size: 16px;
+}
+
+.part1{
+    margin-left: 27rem;
+    margin-top: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 1rem #aff;
+    height: 80rem;
+}
+
+.topproducts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    height: 45rem;
+}
+
+
+.optiones{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: 2rem;
+    gap: 2rem;
+}
+
+.optiones span.active{
+    background-color: rgb(31, 125, 138);
+    color: rgb(109, 180, 200);
+    margin-left: 16rem;
+}
+
+.optiones span{
+    color: rgb(109, 180, 200);
+    background-color: blueviolet;
+    padding: 0.7rem 3rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+
+.optiones span:hover{
+    background-color: cadetblue;
+    color: blueviolet;
+}
+
+
+
+
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 3rem;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.1);
+    height: 100rem;
+}
+
+
+.imagen-product{
+    /*position: relative;*/
+    margin-left: -2rem;
+    max-width: 100%;
+}
+.imagen-product:hover{
+    color: rgb(108, 16, 120);
+    transform:  scale(1.12345);
+}
+
+.imagen-product2{
+    /*position: relative;*/
+    margin-left: -1rem;
+    max-width: 100%;
+}
+.imagen-product2:hover{
+    color: rgb(108, 16, 120);
+    transform:  scale(1.12345);
+}
+
+.imagen-product3{
+    /*position: relative;*/
+    margin-left: -1rem;
+    max-width: 100%;
+}
+.imagen-product3:hover{
+    color: rgb(108, 16, 120);
+    transform:  scale(1.1234567);
+}
+
+.imagen-product4{
+    /*position: relative;*/
+    margin-left: -2rem;
+    max-width: 100%;
+}
+.imagen-product4:hover{
+    color: rgb(108, 16, 120);
+    transform:  scale(1.12345);
+}
+
+
+
+
+.el-producto{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 22rem;
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.el-producto2{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 22rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    
+}
+
+.el-producto3{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 22rem;
+    margin-top: 4rem;
+    margin-left: -1rem;
+}
+
+.el-producto4{
+    background-color: rgb(254, 254, 254);
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: 22rem;
+    margin-top: 4rem;
+    margin-left: -3rem;
+}
+
+.contenidocartaproducto h2{
+    position: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 1.6rem;
+}
+
+.contenidocartaproducto .estrellas{
+    margin-left: 0.8rem;
+}
+
+.contenidocartaproducto p{
+    font-size: 0.6rem;
+    margin-left: 8rem;
+    margin-top: -2rem;
+}
+
+.contenidocartaproducto h2:hover{
+    color: aquamarine;
+}
+
+.contenidocartaproducto .precio{
+    font-size: 1.7rem;
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1rem 2rem;
+    }
+    .banner{
+        max-width: 45rem;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+
+    .el-producto{
+        width: 29.485rem;
+        height: 45rem;
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+
+    .el-producto2{
+        width: 29.485rem;
+        height: 45rem;
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+
+    .el-producto3{
+        width: 29.485rem;
+        height: 45rem;
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+
+    .el-producto4{
+        width: 29.485rem;
+        height: 45rem;
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+
+    .part1{
+        margin-left: 11rem;
+    }
+
+    .imagen-product{
+        max-width: 1rem;
+    }
+
+    .topproducts{
+        max-width: 10rem;
+    }
+}
+
+
+
+
+
+@media(max-width: 468px){
+
+}
+
+/*.contenidocartaproducto .price span{
+    font-size: 0.5rem;
+    text-decoration: line-through;
+    color: rgb(70, 69, 69);
+    margin-left: 0.5rem;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*@media(min-width: 50px){
+    .banner{
+        background-image: url("media/selection.png");
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+    }
+}*/
+
+
+
+
+
+
