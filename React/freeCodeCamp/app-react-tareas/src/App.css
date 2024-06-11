@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  background-image: url('photos/fondo1.jpg');
+  font-family: fantasy;
+  margin-top: 10px;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #1477b9,
+    0 0 10px #2368c4,
+    0 0 20px #74b3f7,
+    0 0 40px #0ff,
+    0 0 80px rgb(117, 216, 216),
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px rgb(37, 218, 218);
+  font-size: 37px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.App-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.vicky-logo-contenedor {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vicky-logo {
+  width: 170px;
+  height: 130px;
+}
+
+/* Listas de Tareas */
+
+.tareas-lista-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+  color: #fff;
+}

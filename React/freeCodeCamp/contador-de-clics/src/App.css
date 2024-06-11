@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+html,body{
+  background-image: url('photos/contadorfondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Lato, sans-serif;
+}
+
+.victoria-logo-contenedor{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+
+.victoria-logo{
+  height: 200px;
+}
+
+
+.contenedor-principal {
+  height: 500px;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
