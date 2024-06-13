@@ -1,7 +1,7 @@
-// App.js
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './Componentes/Menu';
+import ListaProductos from './Componentes/ListaProductos';
 import './App.css';
 
 function App() {
@@ -19,23 +19,20 @@ function App() {
   }, []);
 
   return (
-    
     <Router>
       <h1>Mercado Libre</h1>
       <div className="App">
         
-
-        <Menu categories={categories} />
-
-        <div className='card'>
-          {data && data.results.map((product) => (
-            <div className='el-producto' key={product.id}>
-              <img src={product.thumbnail} alt={product.title} />
-              <h2>{product.title}</h2>
-              <p>Precio: {product.price}</p>
-              <a href={product.permalink} target="_blank" rel="noopener noreferrer">Ver en Mercado Libre</a>
-            </div>
-          ))}
+        <div className="menu">
+          <Menu categories={categories} />
+        </div>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<ListaProductos products={data && data.results} />} />
+            {categories.map(category => (
+              <Route key={category.id} path={`/category/${category.id}`} element={<ListaProductos products={data && data.results.filter(product => product.category_id === category.id)} />} />
+            ))}
+          </Routes>
         </div>
       </div>
     </Router>
@@ -43,6 +40,8 @@ function App() {
 }
 
 export default App;
+      
+
 
 
 
