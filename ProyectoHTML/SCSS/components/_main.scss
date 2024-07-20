@@ -1,0 +1,336 @@
+main {
+  display: flex;
+  flex-direction: row;
+  padding-left: 150px; 
+  padding-top: 25px; 
+
+  section {
+    flex-grow: 3;
+    margin-bottom: 32px; 
+    max-width: 700px; 
+    width: 100%;
+
+    .video-container {
+      margin: 20px 0; // Espacio alrededor del contenedor del video
+      overflow: hidden; // Para que el borde redondeado del contenedor también afecte al contenido
+      border-radius: 20px; // Bordes redondeados del contenedor
+
+      iframe {
+        width: 100%; // Ancho completo del contenedor
+        height: 56.25vw; // Alto proporcional del video basado en una relación de aspecto 16:9
+        max-height: 400px; // Alto máximo del video
+        border: none; 
+        border-radius: 20px; 
+      }
+    }
+
+    .video-info {
+      margin: 16px 0; // Espacio encima del video-info y abajo del video
+      background-color: #f5f5f5; // Color de fondo gris claro
+      border-radius: 8px; // Bordes redondeados
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra sutil alrededor del bloque
+      padding: 16px; // Relleno interno
+      width: 100%; // Ancho igual al del contenedor del video
+
+      h1 {
+        font-size: 20px; // Tamaño de fuente del título del video
+        margin-bottom: 8px; // Espacio debajo del título del video
+        line-height: 1.2; // Altura de línea del título
+      }
+
+      h3 {
+        font-size: 16px; // Tamaño de fuente del subtítulo
+        color: gray;
+        margin-bottom: 16px; // Espacio debajo del subtítulo
+      }
+
+      p {
+        font-size: 14px; // Tamaño de fuente del texto del párrafo
+        line-height: 1.6; // Altura de línea para el texto del párrafo
+      }
+    }
+
+    .comments-section {
+      margin-top: 32px; 
+      background-color: #f9f9f9; 
+      border-radius: 8px; 
+      padding: 16px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      h2 {
+        margin-bottom: 16px; 
+        color: #333; 
+      }
+
+      article {
+        border-bottom: 1px solid #ddd; 
+        padding-bottom: 16px; 
+        margin-bottom: 16px; 
+        overflow: hidden; 
+
+        strong {
+          display: block;
+          font-size: 14px;
+          color: #000; 
+          margin-bottom: 4px; 
+        }
+
+        time {
+          display: block;
+          font-size: 12px; 
+          color: #888; 
+          margin-bottom: 8px; 
+        }
+
+        p {
+          font-size: 14px; 
+        }
+      }
+    }
+
+    .channel-section {
+      display: flex;
+      align-items: center; 
+      margin-top: 16px; 
+      padding: 16px; 
+      width: 100%; 
+
+      .subscribe-button {
+        background-color: #000000; 
+        color: white; 
+        padding: 8px 16px; 
+        border: none; 
+        border-radius: 20px; 
+        cursor: pointer; 
+        font-size: 14px; 
+        margin-right: 16px; 
+      }
+
+      .channel-thumbnail {
+        border-radius: 50%; 
+        width: 64px;
+        margin-right: 16px; 
+      }
+
+      .channel-info {
+        flex-grow: 1; 
+
+        .channel-name {
+          font-size: 16px;
+          font-weight: bold; 
+          margin-bottom: 4px; 
+        }
+
+        .subscriber-count {
+          font-size: 12px; 
+          color: gray; 
+        }
+      }
+
+      .video-actions {
+        display: flex;
+        gap: 8px; 
+        margin-left: auto; 
+
+        button {
+          background-color: #ccc; 
+          border: none; 
+          border-radius: 20px; 
+          cursor: pointer; 
+          font-size: 14px; 
+          padding: 8px 12px; 
+          display: flex;
+          align-items: center; 
+
+          &:hover {
+            background-color: #e0e0e0; 
+          }
+
+          i {
+            margin-right: 4px; 
+            font-size: 18px; 
+          }
+        }
+      }
+    }
+
+    .recommended-videos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: transparent; 
+      padding: 0; 
+      box-shadow: none; 
+
+      .video {
+        display: flex;
+        gap: 8px;
+        padding: 10px; 
+        cursor: pointer; 
+        position: relative; 
+        transition: background-color 0.2s ease; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+
+        &:hover {
+          background-color: #f0f0f0; 
+        }
+
+        .thumbnail {
+          width: 120px; // Ancho de la miniatura del video
+          height: 90px; // Alto de la miniatura del video
+          border-radius: 8px; // Bordes redondeados
+        }
+
+        .video-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; // Centra el contenido verticalmente
+          gap: 4px;
+
+          h4 {
+            font-size: 14px; 
+            margin: 0; 
+          }
+
+          p {
+            font-size: 12px; 
+            color: #666; 
+            margin: 0; 
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    flex-basis: 300px; 
+    margin-left: 20px; 
+    position: sticky; 
+    top: 25px; 
+    padding: 10px; 
+
+    .recommended-videos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .video {
+        display: flex;
+        gap: 8px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+
+        .thumbnail {
+          width: 120px;
+          height: 90px;
+          border-radius: 8px;
+        }
+
+        .video-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 4px;
+
+          h4 {
+            font-size: 14px;
+            margin: 0;
+          }
+
+          p {
+            font-size: 12px;
+            color: #666;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 20px; 
+    padding-top: 15px; 
+
+    section {
+      max-width: 100%; 
+    }
+
+    .channel-section {
+      flex-direction: column; 
+
+      .subscribe-button {
+        margin: 10px 0; 
+      }
+
+      .channel-info {
+        text-align: center; 
+
+        .channel-name {
+          font-size: 16px;
+        }
+
+        .subscriber-count {
+          font-size: 12px; 
+        }
+      }
+
+      .video-actions {
+        margin-top: 10px; 
+        flex-direction: column; 
+        gap: 10px; 
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 10px; 
+    padding-top: 10px; 
+
+    .video-container {
+      iframe {
+        height: 56.25vw; 
+      }
+    }
+
+    .video-info {
+      h1 {
+        font-size: 18px; 
+      }
+
+      h3 {
+        font-size: 14px; 
+      }
+
+      p {
+        font-size: 12px; 
+      }
+    }
+
+    .description-section {
+      h2 {
+        font-size: 14px; 
+      }
+
+      p {
+        font-size: 12px; 
+      }
+    }
+  }
+}
+
+
+
+
+
+  
+
+
+
+
+
+

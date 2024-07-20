@@ -1,0 +1,142 @@
+
+    header form {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        border: 1px solid $color-border-input;
+        border-radius: 20px 0px 0px 20px;
+        padding: 0 10px; 
+        background-color: $color-background-input;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 100%; 
+        width: 100%; 
+        max-width: 450px; 
+        margin-left: 270px; 
+    }
+    
+    
+    header .search-button {
+        border: 1px solid $color-border-button;
+        cursor: pointer;
+        padding: 7.5px;
+        border-radius: 0px 20px 20px 0px;
+        height: $button-height;
+        width: $button-width;
+        margin-right: 20px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: flex-start; 
+    }
+    
+    header img {
+        margin-right: 200px; 
+    }
+    
+    header form {
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-border-input;
+        border-radius: 20px 0px 0px 20px;
+        padding: 0 10px; 
+        background-color: $color-background-input;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px; 
+        margin-left: 0; 
+        
+    }
+    
+    header input[type="text"] {
+        flex: 1; 
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        height: 40px; 
+        max-width: 100%; 
+        padding: 0 10px; 
+        font-size: 15px;
+    }
+    
+    header .search-button {
+        border: 1px solid $color-border-button;
+        cursor: pointer;
+        padding: 7.5px;
+        border-radius: 0px 20px 20px 0px;
+        height: 42px;
+        width: 40px; 
+        margin-left: 0; 
+    }
+    
+    header .search-button:hover {
+        background-color: $color-background-input-hover;
+    }
+    
+    header .search-button i {
+        font-size: $font-size-medium;
+    }
+    
+    header button[type="button"] {
+        background-color: $color-header-button-background; 
+        @include button-style($color-header-button-background, #000); 
+    }
+    
+    header button[type="button"]:hover {
+        background-color: $color-header-button-hover;
+    }
+    
+    header button[type="button"] i {
+        font-size: $font-size-medium;
+    }
+
+        footer {
+        padding: 20px;
+        background-color: #fff;
+        border-top: 1px solid $color-border;
+        font-size: 14px;
+        color: #606060;
+        display: flex;
+        justify-content: center;
+    
+        nav {
+        width: 100%;
+        max-width: 1200px;
+    
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            li {
+            margin-right: 15px;
+            margin-bottom: 10px;
+    
+            @media (max-width: 600px) {
+                margin-right: 0;
+                width: 100%;
+                text-align: center; 
+            }
+    
+            a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+    
+            &:hover {
+                color: #0066c0;
+                text-decoration: underline;
+            }
+            }
+        }
+        }
+    }
+}
+    
+    
+
+    
+
+    
